@@ -12,6 +12,15 @@
     "@opam/reason": "^3.3.7"
   },
   "esy": {
-    "build": "dune build -p #{self.name}"
+    "build": "dune build -p #{self.name}",
+    "release": {
+      "releasedBinaries": [
+        "serrve"
+      ],
+      "deleteFromBinaryRelease": [
+        "ocaml-*",
+        "*opam*"
+      ]
+    }
   }
 }
