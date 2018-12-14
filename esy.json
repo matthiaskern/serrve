@@ -1,0 +1,17 @@
+{
+  "name": "serrve",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "ocaml": "~4.7.1000",
+    "@opam/dune": "*",
+    "@opam/lwt": "*",
+    "@opam/cmdliner": "*",
+    "@opam/cohttp-lwt": "*",
+    "@opam/cohttp-lwt-unix": "*",
+    "@opam/reason": "^3.3.7"
+  },
+  "esy": {
+    "build": "dune build -p #{self.name}"
+  }
+}
